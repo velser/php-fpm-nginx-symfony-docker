@@ -33,4 +33,6 @@ USER app
 WORKDIR /var/www/html
 COPY --chown=app ./src /var/www/html
 
+RUN composer install --no-dev -o
+
 CMD ["/start.sh"]
