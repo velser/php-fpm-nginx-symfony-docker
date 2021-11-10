@@ -31,8 +31,8 @@ RUN chown -R app:app /var/www/html && \
 USER app
 
 WORKDIR /var/www/html
-COPY --chown=app ./src /var/www/html
+COPY --chown=app ./app /var/www/html
 
-RUN composer install --no-dev -o
+RUN composer install --no-dev -o || true
 
 CMD ["/start.sh"]

@@ -16,7 +16,7 @@
 1) cd to .docker/dev
 2) run docker-compose up -d
 3) set up /etc/hosts to point to machine ip
-4) wait until docker finishes installing symfony to src folder (if it exists this part will be skipped)
+4) wait until docker finishes installing symfony to app folder (if it exists this part will be skipped)
 5) go to hostname:8000
 6) if everything works remove .git directory and add your own vcs
 
